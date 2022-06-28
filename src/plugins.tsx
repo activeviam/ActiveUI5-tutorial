@@ -64,6 +64,7 @@ import {
   pluginWidgetTable,
   pluginWidgetTreeTable,
 } from "@activeviam/activeui-sdk";
+import {pluginWidgetMap} from "./custom/pluginWidgetMap";
 
 const cellPlugins: Array<CellPlugin<any>> = [
   pluginCellTable,
@@ -111,6 +112,7 @@ const titleBarButtonPlugins: Array<TitleBarButtonPlugin<any>> = [
 
 // Order matters: it controls the order of the icons in the widget ribbons.
 const widgetPlugins: Array<WidgetPlugin<any, any>> = [
+  pluginWidgetMap,
   pluginWidgetPivotTable,
   pluginWidgetTreeTable,
   pluginWidgetTable,
